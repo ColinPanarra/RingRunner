@@ -7,11 +7,10 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_lm8gk")]
-transform = Transform3D(1, 0, 0, 0, 0.999734, 0.0230537, 0, -0.0230537, 0.999734, 0.226152, 0.728231, 0.543578)
 script = ExtResource("2_qxoj8")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06139, 3.28838)
 
 [node name="world" parent="." instance=ExtResource("2_7yicx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.47576, -0.236788, 0.254336)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15951, -0.0392101, 0.285105)
