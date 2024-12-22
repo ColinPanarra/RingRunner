@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs3vo61qf4f3q"]
+
+[ext_resource type="Script" path="res://assets/character/character_body_3d.gd" id="1_403j2"]
+[ext_resource type="PackedScene" uid="uid://d1x1qunaqoapt" path="res://player_ring.blend" id="2_7u1wd"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_17ljg"]
+height = 0.0924039
+radius = 0.880149
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_403j2")
+
+[node name="Skeleton3D" type="Skeleton3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.138309, 0.990389, 0, -0.990389, -0.138309, 0, 1.17227, 0)
+
+[node name="player_ring" parent="Skeleton3D" instance=ExtResource("2_7u1wd")]
+transform = Transform3D(1, 0, 0, 0, 0.989928, -0.141575, 0, 0.141575, 0.989928, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-0.00939751, -0.0911401, 0.995794, -0.999175, -0.0384939, -0.0129526, 0.0395125, -0.995094, -0.0907031, -0.00364774, 1.19093, -0.104661)
+shape = SubResource("CylinderShape3D_17ljg")
