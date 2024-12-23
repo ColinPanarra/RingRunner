@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d1x1qunaqoapt"
-path="res://.godot/imported/player_ring.blend-b728678e100b75de55574957f92f26d2.scn"
+uid="uid://1acapr2f4nk7"
+path="res://.godot/imported/pole_test-col.blend-7695c432a0771972e05f2911ddc08acb.scn"
 
 [deps]
 
-source_file="res://player_ring.blend"
-dest_files=["res://.godot/imported/player_ring.blend-b728678e100b75de55574957f92f26d2.scn"]
+source_file="res://pole_test-col.blend"
+dest_files=["res://.godot/imported/pole_test-col.blend-7695c432a0771972e05f2911ddc08acb.scn"]
 
 [params]
 
@@ -35,7 +35,7 @@ _subresources={
 "materials": {
 "Material.001": {
 "use_external/enabled": true,
-"use_external/path": ""
+"use_external/path": "res://Material.001.tres"
 }
 }
 }

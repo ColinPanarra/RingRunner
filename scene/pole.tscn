@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cut2hubhskdx0"]
+
+[ext_resource type="PackedScene" uid="uid://1acapr2f4nk7" path="res://pole_test-col.blend" id="1_n8g3v"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ch3hg"]
+height = 14.3188
+radius = 0.206042
+
+[node name="Node3D" type="Node3D"]
+
+[node name="pole_test-col" parent="." instance=ExtResource("1_n8g3v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35561, 0, 1.72067)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.0234725, 0.999724, 0, -0.999724, 0.0234725, 0, 0, 0, 1, -1.47972, 1.36823, 1.68482)
+shape = SubResource("CylinderShape3D_ch3hg")

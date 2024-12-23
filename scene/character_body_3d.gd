@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 #onst gravity = -9.8
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 
 	
 	# Get the input direction and handle the movement/deceleration.
@@ -18,5 +18,5 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 
-	rotate_z(.1)
+	rotate_z(.01)
 	move_and_slide()

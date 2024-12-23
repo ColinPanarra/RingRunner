@@ -3,21 +3,55 @@
 [ext_resource type="Script" path="res://assets/character/character_body_3d.gd" id="1_403j2"]
 [ext_resource type="PackedScene" uid="uid://d1x1qunaqoapt" path="res://player_ring.blend" id="2_7u1wd"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_17ljg"]
-height = 0.0924039
-radius = 0.880149
+[sub_resource type="BoxShape3D" id="BoxShape3D_ga6yq"]
+size = Vector3(0.111206, 0.0794373, 0.871826)
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
-transform = Transform3D(0.677942, 0.735116, 0, -0.735116, 0.677942, 0, 0, 0, 1, 0, 0.00068137, 0)
+transform = Transform3D(0.903268, 0.429077, 0, -0.429077, 0.903268, 0, 0, 0, 1, 0, 0.00068137, 0)
 script = ExtResource("1_403j2")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="."]
 transform = Transform3D(-0.571674, -0.11348, 0.812596, -0.820481, 0.0790676, -0.566179, 0, -0.990389, -0.138309, 0.000815372, 0.00132241, 0)
 
 [node name="player_ring" parent="Skeleton3D" instance=ExtResource("2_7u1wd")]
-transform = Transform3D(0.266263, 0.00317927, 0.963896, 0.133316, 0.990263, -0.040093, -0.954637, 0.139178, 0.263246, 0.00507197, 0.000387285, -0.00277323)
+transform = Transform3D(0.282539, 0.00317991, 1.02248, 0.141465, 0.990461, -0.0425296, -1.01299, 0.139206, 0.279245, 0.00507197, 0.000387285, -0.00277323)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 physics_interpolation_mode = 1
-transform = Transform3D(-0.918794, -0.071862, 0.388141, -0.392755, 0.0680011, -0.917126, 0.0395125, -0.995094, -0.0907031, 0.00643239, -0.0594032, -0.104661)
-shape = SubResource("CylinderShape3D_17ljg")
+transform = Transform3D(-0.718855, -0.0913577, 0.689119, -0.694023, 0.0379739, -0.718939, 0.0395125, -0.995094, -0.0907031, -0.695004, -0.748349, -0.0569637)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(0.657877, -0.129922, 0.741815, -0.734145, 0.108981, 0.670166, -0.167915, -0.98552, -0.0236833, 0.637307, -0.728861, -0.000994448)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(-0.0258848, -0.0485146, 0.998474, -0.999266, 0.0289297, -0.0245006, -0.0276994, -0.998407, -0.0492259, -0.0193379, -0.958885, -0.000994448)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(0.984365, -0.168912, 0.0495308, -0.0528132, -0.0149987, 0.998457, -0.167915, -0.98552, -0.0236833, -0.974841, -0.0431752, 0.00158724)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(0.714265, -0.13819, 0.686058, -0.679404, 0.098285, 0.727113, -0.167915, -0.98552, -0.0236833, -0.746426, 0.62367, 0.00158724)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(0.0600241, -0.0342034, 0.997575, -0.983951, 0.166092, 0.0648954, -0.167915, -0.98552, -0.0236833, 0.00609937, 0.931987, 0.00158724)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(-0.72591, 0.107358, 0.679316, -0.666945, 0.131265, -0.733414, -0.167915, -0.98552, -0.0236833, 0.7369, 0.607142, 0.00158724)
+shape = SubResource("BoxShape3D_ga6yq")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="."]
+physics_interpolation_mode = 1
+transform = Transform3D(0.985396, -0.168475, 0.0240397, -0.0276806, -0.0193035, 0.999416, -0.167915, -0.98552, -0.0236833, 0.997575, -0.0200472, -0.000994448)
+shape = SubResource("BoxShape3D_ga6yq")
